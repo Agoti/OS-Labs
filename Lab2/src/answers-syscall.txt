@@ -1,0 +1,7 @@
+usertrap
+7		SYS_exec
+user mode
+lw	s2,0(zero)		s2
+Load page fault：加载了0地址而崩溃         地址0并不映射到内核空间
+initcode	1
+

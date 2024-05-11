@@ -1,0 +1,7 @@
+fstat; store the fstat infomation in USYSCALL page when opening the file.
+
+page 0: segments loaded from the ELF file. Text and data.
+page 2: user stack.
+page 1: guard page. Cannot be read/written.
+page 509-511: usyscall page, trapframe page and trampoline page.
+others: heaps.
